@@ -1,0 +1,32 @@
+Type script
+=============
+Java script with type is typescript.
+Javascript is dynamically typed language. means javascript can have a variable with different types value.
+let a =10
+a='Ramessh lal'
+Javascript will not through any error. Javascript determines types at runtime.
+
+let a:number=10
+a='ramessh lal'
+this will give error.
+
+app.ts 
+npx tsc app.ts (compile the typescript file)
+
+#Advantage
+----------
+early error detection
+#disadvantage
+-------------
+extra setup , code execution goes through compilation.
+# Java script
+---------------
+> dynamic type language
+> type decide at run time.
+> runtime error.
+# Type Script
+--------------
+> Static type + superset of Javascript.
+> type defined first.
+> compile time error.
+>easy for debugging.
