@@ -30,3 +30,27 @@ extra setup , code execution goes through compilation.
 > type defined first.
 > compile time error.
 >easy for debugging.
+
+# On Project level
+> npm install typescript --save-dev
+> For automatic compilation we can do npx tsc app.ts --watch
+
+# How Type script work?
+whenever we create a .ts file called typescript file and runt it with //"tsc app.ts" or //"npx tsc app.ts --watch" it will compile the ts code into another file called .js file and then we can run it using //"node app.js". 
+if we have multiple .ts file we cannot do compilation for all the .ts file to .js file this is done automatically.
+# we can automate the large project by creating tsConfig file //"tsc -init" 
+{
+  "compilerOptions": {
+    // File Layout
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "module": "commonjs",
+    "target": "esnext",
+    "declaration": true,
+    "types":[],
+    "strict": true
+  }
+}
+create a src folder and move all the .ts file and index.html file inside the root directory.
+then run with tsc -w (this will create the dist folder and run all the compiled .ts file into .js file )
+> To see the output node //dist/app.js
