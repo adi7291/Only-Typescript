@@ -1,56 +1,8 @@
-Type script
-=============
-Java script with type is typescript.
-Javascript is dynamically typed language. means javascript can have a variable with different types value.
-let a =10
-a='Ramessh lal'
-Javascript will not through any error. Javascript determines types at runtime.
+# BigInt
+==========
+=>number greater the 9007199254740991 are bigInt number.
 
-let a:number=10
-a='ramessh lal'
-this will give error.
-
-app.ts 
-npx tsc app.ts (compile the typescript file)
-
-#Advantage
-----------
-early error detection
-#disadvantage
--------------
-extra setup , code execution goes through compilation.
-# Java script
----------------
-> dynamic type language
-> type decide at run time.
-> runtime error.
-# Type Script
---------------
-> Static type + superset of Javascript.
-> type defined first.
-> compile time error.
->easy for debugging.
-
-# On Project level
-> npm install typescript --save-dev
-> For automatic compilation we can do npx tsc app.ts --watch
-
-# How Type script work?
-whenever we create a .ts file called typescript file and runt it with //"tsc app.ts" or //"npx tsc app.ts --watch" it will compile the ts code into another file called .js file and then we can run it using //"node app.js". 
-if we have multiple .ts file we cannot do compilation for all the .ts file to .js file this is done automatically.
-# we can automate the large project by creating tsConfig file //"tsc -init" 
-{
-  "compilerOptions": {
-    // File Layout
-    "rootDir": "./src",
-    "outDir": "./dist",
-    "module": "commonjs",
-    "target": "esnext",
-    "declaration": true,
-    "types":[],
-    "strict": true
-  }
-}
-create a src folder and move all the .ts file and index.html file inside the root directory.
-then run with tsc -w (this will create the dist folder and run all the compiled .ts file into .js file )
-> To see the output node //dist/app.js
+=> Bigint doesn't have max value as number.
+=>Bigint doesn't have decimal number .
+=> Used in large number calculations. 
+ 
